@@ -1,3 +1,6 @@
+// Check whether the entered input is 16 bit and isPrime
+
+
 #include <string.h>
 #include <iostream>
 #include <string>
