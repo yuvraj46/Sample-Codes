@@ -1,3 +1,5 @@
+//Toggle buton for switching the results obtained from MySQL database in PHP
+
 <?php
 
 	$connect = mysql_connect("localhost","",""); 
