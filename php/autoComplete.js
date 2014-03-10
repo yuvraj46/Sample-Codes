@@ -107,7 +107,6 @@ function updownArrow(keyCode) {
       if(acListCurrent == 0 || acListCurrent == -1){
       acListCurrent = acListTotal-1; }else{
       acListCurrent--;
-      
       }
     } 
     else { // keyDown
@@ -127,8 +126,10 @@ function updownArrow(keyCode) {
     else {
       this.className = "unselected";
     }
-  });
-  return true; } else {
+    });
+  return true; 
+  }
+  else {
   // reset 
     acListCurrent = -1; 
     return false;
