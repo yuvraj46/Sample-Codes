@@ -1,5 +1,9 @@
+/*
+Write a function that accepts a multi-dimensional container of any size and converts it into a one dimensional 
+associative array whose keys are strings representing their value's path in the original container.
+*/
+
 <?php
-	
 	$input = array
 	(
 		"one"=>array
