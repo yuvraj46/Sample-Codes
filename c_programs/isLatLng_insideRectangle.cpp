@@ -1,3 +1,8 @@
+/*
+Input the Southwest Latitude and Longitude first and then NortEast
+After entering the abouve co-ordinated, enter the point that is to look for in the rectangle
+*/
+
 #include "stdafx.h"
 #include "conio.h"
 #include "math.h"
