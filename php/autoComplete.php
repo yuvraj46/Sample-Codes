@@ -1,3 +1,4 @@
+//Autocompletes a text field from mySQL database
 <?php
   $link = mysql_connect(''); if (!$link) {
   die('Could not connect: ' . mysql_error()); }
