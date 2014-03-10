@@ -1,5 +1,5 @@
 /*
-findNthNode
+findNthNode that will be printed for preoder traversal
 
 params:
 - pointer to the root of a binary tree
