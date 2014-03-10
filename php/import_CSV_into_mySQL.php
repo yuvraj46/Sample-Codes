@@ -1,20 +1,21 @@
 <?php
-//connect to the database
-$connect = mysql_connect(""); mysql_select_db("",$connect); //select the table //
-if ($_FILES[csv][size] > 0) {
-//get the csv file
-$file = $_FILES[csv][tmp_name]; $handle = fopen($file,"r");
-//loop through the csv file and insert into database do {
-if ($data[0]) {
-mysql_query("INSERT INTO cip (cip, cipname) VALUES
-(
-'".addslashes($data[0])."', '".addslashes($data[1])."'
-) ");
-}
-} while ($data = fgetcsv($handle,1000,";","'")); //
-//redirect
-header('Location: import.php?success=1'); die;
-} ?>
+  //connect to the database
+  $connect = mysql_connect(""); mysql_select_db("",$connect); //select the table //
+  if ($_FILES[csv][size] > 0) {
+    //get the csv file
+    $file = $_FILES[csv][tmp_name]; $handle = fopen($file,"r");
+    //loop through the csv file and insert into database do {
+    if ($data[0]) {
+      mysql_query("INSERT INTO  (, ) VALUES
+      (
+      '".addslashes($data[0])."', '".addslashes($data[1])."'
+      ) ");
+    }
+  } while ($data = fgetcsv($handle,1000,";","'")); //
+  //redirect
+  header('Location: import.php?success=1'); die;
+  } 
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> <title>Import a CSV File with PHP & MySQL</title>
